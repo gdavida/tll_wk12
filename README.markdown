@@ -1,6 +1,7 @@
 == README
 
 ## Toy Lending Library
+<a href="https://codeclimate.com/github/gdavida/tll_wk12"><img src="https://codeclimate.com/github/gdavida/tll_wk12/badges/gpa.svg" /></a>
 
 * Ruby version - 2.3.0
 
