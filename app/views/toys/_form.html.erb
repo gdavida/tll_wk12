@@ -24,7 +24,7 @@
   <!-- DROPDOWN PICK AN AGE GROUP -->
   <div class="input-field col s12 m10 offset-m1">
     <div><%= t.label :age_group_id %></div>
-    <select class="icons" id="age_group" name="age_group_id">
+    <select class="icons" id="age_group" name="toy[age_group_id]">
       <option value="" disabled selected>Select Assigned Age Group</option>
       <% @age_groups.each do |a| %>
         <option value="<%= a.id %>"><%= a.age %></option>

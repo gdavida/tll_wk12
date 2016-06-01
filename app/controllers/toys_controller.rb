@@ -25,7 +25,7 @@ class ToysController < ApplicationController
   end
 
   def create
-    @toy = Toy.new
+    @toy = Toy.new(toy_params)
     @age_groups = AgeGroup.all
     @age_group = AgeGroup.find_by_id(params[:id])
 
@@ -46,25 +46,25 @@ class ToysController < ApplicationController
   end
 
   def edit
-    @toy - Toy.find_by_id(params[:id])
+    @toy = Toy.find_by_id(params[:id])
   end
 
   def show
-    @toy = Toy.new
+    @toy = Toy.find_by_id(params[:id])
     @age_groups = AgeGroup.all
-    @age_group = AgeGroup.find_by_id(params[:id])
+    @age_group = @toy.age_group
     @boxes = Box.all
-    @box = Box.find_by_id(params[:id])
+    @box = @toy.box
   end
 
   def update
-    @toy = Toy.new
+    @toy = Toy.find_by_id(params[:id])
     @age_groups = AgeGroup.all
     @age_group = AgeGroup.find_by_id(params[:id])
     @boxes = Box.all
     @box = Box.find_by_id(params[:id])
-    if@toy.save
-      redirect_to :toys, notice: "Successfully updated"
+    if@toy.update_attributes(toy_params)
+      redirect_to toy_path(@toy), notice: "Successfully updated"
     else
       flash.now[:alert] = "Couldn't Update"
       render :new
