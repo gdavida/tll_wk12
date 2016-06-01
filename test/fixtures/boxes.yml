@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: "Z123"
+  age_group_id: 1
+  status_id: 1
+  user_id: 1
+  location_id: 1
+
+two:
+  name: "X1"
+  age_group_id: 2
+  status_id: 3
+  user_id: 2
+  location_id: 2
