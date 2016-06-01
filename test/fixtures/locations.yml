@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  branch_name: "Mast Park"
+  address: "10246 Kit Carson Place"
+  contact_name: "Sadie"
+
+two:
+  branch_name: "West"
+  address: "444 E Eastern Parkway"
+  contact_name: "Cory"
