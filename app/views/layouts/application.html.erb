@@ -1,14 +1,107 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>TllWk12</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <title>TllWk12</title>
+ <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-<%= yield %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
 
-</body>
+          
+  </head>
+  <body>
+<nav class="grey darken-3" role="navigation">
+    <div class="nav-wrapper container">
+    <a id="logo-container" href="#" class="brand-logo">
+      Toy Lending Library
+    </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  </div>
+
+<!-- HEADER HERO W LOGO -->
+  <div class=" light-green section no-pad-bot" id="index-banner">
+    <div class="container">
+      <div class="row center">
+      <br>
+        <div class="col s4 offset-s4">
+          <%= image_tag("tll-logo.png", class:"responsive-img") %>
+        </div>
+        <div class="col s8 offset-s2 center-align">
+          <h5 class="header light">Play. Learn. Grow</h5>
+        </div>
+        <div class="col s4 offset-s4 center-align">
+          <a href="#" id="download-button" class="btn-large waves-effect waves-light amber darken-1">Log In</a>
+        </div>
+      <br><br>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      
+      <%= yield %>
+
+    </div>
+      <br><br>
+
+  </div>
+
+
+  <footer class="page-footer  light-green lighten-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="">Company Bio</h5>
+          <p class="">The Toy Lending Library seeks to place age-appropriate toys in the hands of children. Free to everyone, our process is simple: visit one of our four Toy Lending Library locations and, using an ID and contact information, check out the box of choice and return it to the library within 3 weeks.</p>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="">Locations</h5>
+          <ul>
+            <li><a class="grey-text text-darken-3" href="#!">Main Branch</a></li>
+            <li><a class="grey-text text-darken-3" href="#!">Downtown Public Library</a></li>
+            <li><a class="grey-text text-darken-3" href="#!">Ronning Public Library</a></li>
+            <li><a class="grey-text text-darken-3" href="#!">Oak View Public Library</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="">Hours</h5>
+          <ul class="grey-text text-darken-3">
+            <li class="">M 10:00am to 1:00pm</li>
+            <li class="">W 11:00am to 1:00pm</li>
+            <li class="">Th 4:00pm to 6:00pm</li>
+            <li class="">F 9:30am to 11:15am</li>
+            <li class="light-italic">Also open by appointment: (605) 215-0575</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container black-text">
+      Made by <a class="black-text" href="http://gdavida.github.io/dgPortfolio">Davida Gaffney</a>
+      </div>
+    </div>
+  </footer>
+
+
+    <!-- jQuery first, then MAterialize JS. -->
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
+  </body>
 </html>
