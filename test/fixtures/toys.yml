@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: "Red Rubber Ball"
+  box_id: 1
+  brand: "Simon Toys Inc."
+  age_group_id: 1
+  upc: "234234"
+  manufacturer_suggested_age: "2+"
+  pieces: 1
+  website: "www.toys.com"
+  purchased_from: "amazon"
+  price: "1.99"
+
+two:
+  name: "Mrs. Potato Head"
+  box_id: 2
+  brand: "Fischer Price"
+  age_group_id: 6
+  upc: "12345"
+  manufacturer_suggested_age: "3+"
+  pieces: 14
+  website: "www.fischerprice.com"
+  purchased_from: "Target"
+  price: "14.99"

@@ -32,3 +32,10 @@ Box.create!(name:"C1", age_group_id:3, status_id:1, user_id:1, location_id:3)
 Box.create!(name:"D1", age_group_id:4, status_id:1, user_id:4, location_id:3)
 Box.create!(name:"E1", age_group_id:5, status_id:1, user_id:5, location_id:2)
 Box.create!(name:"F1", age_group_id:6, status_id:1, user_id:1, location_id:2)
+
+
+Toy.create!(name: "Mr. Potato Head", brand: "Some Brand",upc: "B005KJE9L2", manufacturer_suggested_age: "1 yr +", website: "www.google.com", purchased_from: "Target", price: "14.99", toy_image: "http://i.infopls.com/images/Mr_Potato_Head_toy_H.jpg", pieces: 13, box_id: 4, age_group_id: 3)
+Toy.create!(name: "Flexi-Loop", upc: "885147093043", toy_image: "http://ecx.images-amazon.com/images/I/71vjqnKDReL._SX355_.jpg", pieces: 1, box_id: 1, age_group_id: 1, brand: "Some Brand", manufacturer_suggested_age: "2 yr +", website: "www.google.com", purchased_from: "Target", price: "14.99")
+Toy.create!(name: "Links", upc: "786417014846", toy_image: "http://www.toysrus.com/graphics/product_images/pTRU1-5744994reg.jpg", pieces: 4, box_id: 1, age_group_id: 1, brand: "Some Brand", manufacturer_suggested_age: "2 yr +", website: "www.google.com", purchased_from: "Target", price: "14.99")
+Toy.create!(name: "Learning with Animals Book", upc: "0756634687", toy_image: "http://www.dhresource.com/0x0s/f2-albu-g4-M00-83-69-rBVaEFbvvfWAPYO7AAS2nalp93o574.jpg/new-baby-039-s-cognitive-cloth-book-4-pcs.jpg", pieces: 1, box_id: 1, age_group_id: 1, brand: "Other Brand", manufacturer_suggested_age: "5 yr +", website: "www.google.com", purchased_from: "Sl's ToyBarn", price: "4.99")
+Toy.create!(name: "Duck", upc: "735282310010", toy_image: "http://ekmpowershop9.com/ekmps/shops/bargainwarehous/images/toy-squeezy-duck-plastic-5cm-yellow-pw-9465-p.jpg", pieces: 1, box_id: 1, age_group_id: 1, brand: "Mattel", manufacturer_suggested_age: "1 yr +", website: "www.google.com", purchased_from: "ToyChest", price: "33.00")
