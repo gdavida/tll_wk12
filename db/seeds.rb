@@ -19,3 +19,7 @@ Location.create!(branch_name: "Downtown", address:"123 S Main St", contact_name:
 Location.create!(branch_name: "Main", address:"8th and Railroad", contact_name: "Beth")
 Location.create!(branch_name: "Callie", address:"1450 E 48th St", contact_name: "Fred")
 
+Status.create!(category:"checked in", color:"green")
+Status.create!(category:"checked out", color:"red")
+Status.create!(category:"out of circulation", color:"black")
+Status.create!(category:"pending cleaning", color:"yellow")
