@@ -1,12 +1,17 @@
 Rails.application.routes.draw do
 
+  root :to => 'sessions#new'
+
   resources :age_groups
   resources :locations
   resources :statuses
   resources :boxes
   resources :toys
   resources :users
+  resources :sessions
 
+  get 'login' => 'sessions#new', :as => :login
+  post 'logout' => 'sessions#destroy', :as => :logout
 
 
   # The priority is based upon order of creation: first created -> highest priority.
