@@ -1,0 +1,58 @@
+<%= form_for @box do |b| %>
+
+
+<% if b.object.errors.any?%>
+  <div class="col xs12 s12">
+    <% b.object.errors.full_messages.each do |x|%>
+      <li>Error: <%= x %></li>
+    <% end %>
+  </div>
+  <% end %>
+
+  <div class="input-field col s12 m10 offset-m1">
+    <div><%= b.label :name %></div>
+    <div><%= b.text_field :name %></div>
+  </div>
+
+
+  <!-- DROPDOWN PICK AN AGE GROUP -->
+  <div class="input-field col s12 m10 offset-m1">
+    <div><%= b.label :age_group_id %></div>
+    <select class="icons" id="age_group" name="box[age_group_id]">
+      <option value="" disabled selected>Select Assigned Age Group</option>
+      <% @age_groups.each do |a| %>
+        <option value="<%= a.id %>"><%= a.age %></option>
+      <% end %>
+    </select>
+  </div>
+
+  <!-- DROPDOWN PICK A STATUS -->
+  <div class="input-field col s12 m10 offset-m1">
+    <div><%= b.label :status_id %></div>
+    <select class="icons" id="age_group" name="box[status_id]">
+      <option value="" disabled selected>Select Status</option>
+      <% @statuses.each do |s| %>
+        <option value="<%= s.id %>"><%= s.category %></option>
+      <% end %>
+    </select>
+  </div>
+
+  <!-- DROPDOWN PICK A LOCATION -->
+  <div class="input-field col s12 m10 offset-m1">
+    <div><%= b.label :location_id %></div>
+    <select class="icons" id="age_group" name="box[location_id]">
+      <option value="" disabled selected>Select Location</option>
+      <% @locations.each do |l| %>
+        <option value="<%= l.id %>"><%= l.branch_name %></option>
+      <% end %>
+    </select>
+  </div>
+
+
+  <div class="col sm10 offset-m1">
+    <span class="waves-effect right waves-light newPackBtn btn amber lighten-1">
+      <%= b.submit %>
+    </span>
+  </div>
+<% end %>
+
