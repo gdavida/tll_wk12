@@ -1,19 +1,6 @@
 Rails.application.routes.draw do
-  get 'age_groups/index'
-
-  get 'age_groups/create'
-
-  get 'age_groups/new'
-
-  get 'age_groups/edit'
-
-  get 'age_groups/show'
-
-  get 'age_groups/update'
-
-  get 'age_groups/destroy'
-
   resources :age_groups
+  resources :locations
 
 
 
