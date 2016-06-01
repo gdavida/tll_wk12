@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :age_groups
   resources :locations
   resources :statuses
+  resources :boxes
 
 
 
