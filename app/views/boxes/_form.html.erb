@@ -48,6 +48,18 @@
     </select>
   </div>
 
+  <!-- CHECKLIST FOR SELECTING MULTIPLE TOYS TO BELONG TO THIS BOX-->
+      <ul>
+      <% @toys.each  do |t| %>
+        <li>
+          <%= check_box_tag(t) %>
+          <%= label_tag(t, t.name) %>
+        </li>
+      <% end %>
+      </ul>
+
+
+
 
   <div class="col sm10 offset-m1">
     <span class="waves-effect right waves-light newPackBtn btn amber lighten-1">

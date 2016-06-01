@@ -26,6 +26,8 @@ class BoxesController < ApplicationController
     @status = Status.find_by_id(params[:id])
     @locations = Location.all
     @location = Location.find_by_id(params[:id])
+    @toys = Toy.all
+    @toy = Toy.find_by_id(params[:id])
     # @users = User.all
     # @user = User.find_by_id(params[:id])
 
@@ -47,6 +49,8 @@ class BoxesController < ApplicationController
     @status = Status.find_by_id(params[:id])
     @locations = Location.all
     @location = Location.find_by_id(params[:id])
+    @toys = Toy.all
+    @toy = Toy.find_by_id(params[:id])
     # @users = User.all
     # @user = User.find_by_id(params[:id])
 
@@ -70,6 +74,8 @@ class BoxesController < ApplicationController
     @status = Status.find_by_id(params[:id])
     @locations = Location.all
     @location = Location.find_by_id(params[:id])
+    @toys = Toy.all
+    @toy = Toy.find_by_id(params[:id])
     # @users = User.all
     # @user = User.find_by_id(params[:id])
 
