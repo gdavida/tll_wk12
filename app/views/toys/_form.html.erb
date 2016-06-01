@@ -1,0 +1,77 @@
+<%= form_for @toy do |t| %>
+
+
+<% if t.object.errors.any?%>
+  <div class="col xs12 s12">
+    <% t.object.errors.full_messages.each do |x|%>
+      <li>Error: <%= x %></li>
+    <% end %>
+  </div>
+  <% end %>
+
+  <div class="input-field col s12 m10 offset-m1">
+    <div><%= t.label :name %></div>
+    <div><%= t.text_field :name %></div>
+  </div>
+
+<!-- NOT EDITABLE IN TOYS, MUST CHANGE THROUGH BOXES -->
+
+  <div class="input-field col s12 m10 offset-m1">
+    <div><%= t.label :brand %></div>
+    <div><%= t.text_field :brand %></div>
+  </div>
+
+  <!-- DROPDOWN PICK AN AGE GROUP -->
+  <div class="input-field col s12 m10 offset-m1">
+    <div><%= t.label :age_group_id %></div>
+    <select class="icons" id="age_group" name="age_group_id">
+      <option value="" disabled selected>Select Assigned Age Group</option>
+      <% @age_groups.each do |a| %>
+        <option value="<%= a.id %>"><%= a.age %></option>
+      <% end %>
+    </select>
+  </div>
+
+  <div class="input-field col s12 m10 offset-m1">
+    <div><%= t.label :upc %></div>
+    <div><%= t.text_field :upc %></div>
+  </div>
+
+  <div class="input-field col s12 m10 offset-m1">
+    <div><%= t.label :manufacturer_suggested_age %></div>
+    <div><%= t.text_field :manufacturer_suggested_age %></div>
+  </div>
+
+  <div class="input-field col s12 m10 offset-m1">
+    <div><%= t.label :pieces %></div>
+    <div><%= t.text_field :pieces %></div>
+  </div>
+
+  <div class="input-field col s12 m10 offset-m1">
+    <div><%= t.label :website %></div>
+    <div><%= t.text_field :website %></div>
+  </div>
+
+  <div class="input-field col s12 m10 offset-m1">
+    <div><%= t.label :purchased_from %></div>
+    <div><%= t.text_field :purchased_from %></div>
+  </div>
+
+  <div class="input-field col s12 m10 offset-m1">
+    <div><%= t.label :price %></div>
+    <div><%= t.text_field :price %></div>
+  </div>
+
+  <div class="input-field col s12 m10 offset-m1">
+    <div><%= t.label :toy_image %></div>
+    <div><%= t.text_field :toy_image %></div>
+  </div>
+
+
+  <div class="col sm10 offset-m1">
+    <span class="waves-effect right waves-light newPackBtn btn  red darken-3">
+      <%= t.submit %>
+    </span>
+  </div>
+<% end %>
+

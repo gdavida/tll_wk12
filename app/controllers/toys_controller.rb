@@ -34,12 +34,15 @@ class ToysController < ApplicationController
     else
       flash.now[:alert] = "Couldn't create"
       render :new
+    end
   end
 
   def new
     @toy = Toy.new
     @age_groups = AgeGroup.all
     @age_group = AgeGroup.find_by_id(params[:id])
+    @boxes = Box.all
+    @box = Box.find_by_id(params[:id])
   end
 
   def edit
@@ -58,12 +61,14 @@ class ToysController < ApplicationController
     @toy = Toy.new
     @age_groups = AgeGroup.all
     @age_group = AgeGroup.find_by_id(params[:id])
-
+    @boxes = Box.all
+    @box = Box.find_by_id(params[:id])
     if@toy.save
       redirect_to :toys, notice: "Successfully updated"
     else
       flash.now[:alert] = "Couldn't Update"
       render :new
+    end
   end
 
   def destroy
@@ -76,7 +81,4 @@ class ToysController < ApplicationController
   def toy_params
     params.require(:toy).permit(:name, :box_id, :brand, :age_group_id, :upc, :manufacturer_suggested_age, :pieces, :website, :purchased_from, :price, :toy_image)
   end
-
-
-
 end
