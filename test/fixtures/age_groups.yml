@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  age: "1 - 2 months"
+  color: "teal"
+
+two:
+  age: "4 years"
+  color: "coral reef"
