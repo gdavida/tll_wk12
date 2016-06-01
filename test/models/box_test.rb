@@ -14,13 +14,13 @@ class BoxTest < ActiveSupport::TestCase
 
   test "test should pass even if age group id is not present" do
   	@box = boxes(:two)
-  	@box.age_group = ""
+  	@box.age_group = nil
   	assert(@box.valid?, "This should be valid even without an age group id")
 	end
 
   test "test should fail if status id is not present" do
   	@box = boxes(:two)
-  	@box.status_id = ""
+  	@box.status = nil
   	refute(@box.valid?, "This should be invalid without a status id")
 	end
 
