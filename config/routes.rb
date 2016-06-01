@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :statuses
   resources :boxes
   resources :toys
+  resources :users
 
 
 
