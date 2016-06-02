@@ -3,9 +3,25 @@
 # This model initially had no columns defined.  If you add columns to the
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
+
+# class SorceryCore < ActiveRecord::Migration
+#   def change
+#     create_table :users do |t|
+
+#       t.string :name
+#       t.string :phone
+#       t.string :email,            :null => false
+#       t.string :crypted_password
+#       t.string :salt
+
+#       t.timestamps
+#     end
+
+#     add_index :users, :email, unique: true
 #
-one: {}
-# column: value
-#
-two: {}
-#  column: value
+default_user: 
+  name: "Sadie McGarvey"
+  phone: "555-555-1234"
+  email: "default_user@example.com"
+  salt: <%= salt = "asdasdastr4325234324sdfds" %>
+  crypted_password: <%= Sorcery::CryptoProviders::BCrypt.encrypt("secret", salt) %>

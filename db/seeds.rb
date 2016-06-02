@@ -39,3 +39,12 @@ Toy.create!(name: "Flexi-Loop", upc: "885147093043", toy_image: "http://ecx.imag
 Toy.create!(name: "Links", upc: "786417014846", toy_image: "http://www.toysrus.com/graphics/product_images/pTRU1-5744994reg.jpg", pieces: 4, box_id: 1, age_group_id: 1, brand: "Some Brand", manufacturer_suggested_age: "2 yr +", website: "www.google.com", purchased_from: "Target", price: "14.99")
 Toy.create!(name: "Learning with Animals Book", upc: "0756634687", toy_image: "http://www.dhresource.com/0x0s/f2-albu-g4-M00-83-69-rBVaEFbvvfWAPYO7AAS2nalp93o574.jpg/new-baby-039-s-cognitive-cloth-book-4-pcs.jpg", pieces: 1, box_id: 1, age_group_id: 1, brand: "Other Brand", manufacturer_suggested_age: "5 yr +", website: "www.google.com", purchased_from: "Sl's ToyBarn", price: "4.99")
 Toy.create!(name: "Duck", upc: "735282310010", toy_image: "http://ekmpowershop9.com/ekmps/shops/bargainwarehous/images/toy-squeezy-duck-plastic-5cm-yellow-pw-9465-p.jpg", pieces: 1, box_id: 1, age_group_id: 1, brand: "Mattel", manufacturer_suggested_age: "1 yr +", website: "www.google.com", purchased_from: "ToyChest", price: "33.00")
+
+User.create!(name:"Davida", phone: "123-456-2342", email: "davida@davida.com", password: "doghat", password_confirmation: "doghat")
+User.create!(name:"Sadie", phone: "423-344-1234", email: "sadie@sadie.com", password: "password", password_confirmation: "password")
+User.create!(name:"Patrick", phone: "123-456-2342", email: "patrick@patrick.com", password: "brooklyn", password_confirmation: "brooklyn")
+User.create!(name:"Patty", phone: "402-555-2322", email: "patty@patty.com", password: "mypassword", password_confirmation: "mypassword")
+User.create!(name:"Tom", phone: "925-555-1234", email: "tom@tom.com", password: "tomtom", password_confirmation: "tomtom")
+User.create!(name:"Lina", phone: "123-456-2342", email: "lina@lina.com", password: "linalina", password_confirmation: "linalina")
+User.create!(name:"Cory", phone: "402-555-1234", email: "cory@cory.com", password: "corycory", password_confirmation: "corycory")
+User.create!(name:"Phyu", phone: "925-555-4444", email: "phyu@phyu.com", password: "burmamyanmar", password_confirmation: "burmamyanmar")
