@@ -32,7 +32,7 @@
     <select class="icons" id="status" name="box[status_id]">
       <option value="" disabled selected>Select Status</option>
       <% @statuses.each do |s| %>
-        <option value="<%= s.email %>"><%= s.category %></option>
+        <option value="<%= s.id %>"><%= s.category %></option>
       <% end %>
     </select>
   </div>
@@ -43,7 +43,7 @@
     <select class="icons" id="user" name="box[user_id]">
       <option value="" disabled selected>Select User</option>
       <% @users.each do |s| %>
-        <option value="<%= s.id %>"><%= s.category %></option>
+        <option value="<%= s.id %>"><%= s.email %></option>
       <% end %>
     </select>
   </div>
