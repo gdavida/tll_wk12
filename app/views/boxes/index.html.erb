@@ -1,2 +1,15 @@
-<h1>Boxes#index</h1>
-<p>Find me in app/views/boxes/index.html.erb</p>
+<h1>All Boxes</h1>
+
+
+     <ul class="collection with-header">
+        <li class="collection-header"><h4>All Boxes</h4></li>
+    		<% @boxes.each do |b|%>
+	        <li class="collection-item">
+	        	<div><%= link_to b.name, box_path(b)%>
+	        		<span class="secondary-content">
+								<%= b.age_group.age %>
+							</span>
+	        	</div>
+	        </li>
+	      <% end %>
+      </ul>
