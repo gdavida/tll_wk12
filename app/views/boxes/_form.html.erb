@@ -29,9 +29,20 @@
   <!-- DROPDOWN PICK A STATUS -->
   <div class="input-field col s12 m10 offset-m1">
     <div><%= b.label :status_id %></div>
-    <select class="icons" id="age_group" name="box[status_id]">
+    <select class="icons" id="status" name="box[status_id]">
       <option value="" disabled selected>Select Status</option>
       <% @statuses.each do |s| %>
+        <option value="<%= s.email %>"><%= s.category %></option>
+      <% end %>
+    </select>
+  </div>
+
+  <!-- DROPDOWN PICK A USER -->
+  <div class="input-field col s12 m10 offset-m1">
+    <div><%= b.label :user_id %></div>
+    <select class="icons" id="user" name="box[user_id]">
+      <option value="" disabled selected>Select User</option>
+      <% @users.each do |s| %>
         <option value="<%= s.id %>"><%= s.category %></option>
       <% end %>
     </select>
@@ -40,7 +51,7 @@
   <!-- DROPDOWN PICK A LOCATION -->
   <div class="input-field col s12 m10 offset-m1">
     <div><%= b.label :location_id %></div>
-    <select class="icons" id="age_group" name="box[location_id]">
+    <select class="icons" id="location" name="box[location_id]">
       <option value="" disabled selected>Select Location</option>
       <% @locations.each do |l| %>
         <option value="<%= l.id %>"><%= l.branch_name %></option>

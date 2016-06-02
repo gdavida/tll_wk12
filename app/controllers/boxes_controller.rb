@@ -28,8 +28,8 @@ class BoxesController < ApplicationController
     @location = Location.find_by_id(params[:id])
     @toys = Toy.all
     @toy = Toy.find_by_id(params[:id])
-    # @users = User.all
-    # @user = User.find_by_id(params[:id])
+    @users = User.all
+    @user = User.find_by_id(params[:id])
 
     if@box.save
       redirect_to :boxes, notice: "Success created"
@@ -51,8 +51,8 @@ class BoxesController < ApplicationController
     @location = Location.find_by_id(params[:id])
     @toys = Toy.all
     @toy = Toy.find_by_id(params[:id])
-    # @users = User.all
-    # @user = User.find_by_id(params[:id])
+    @users = User.all
+    @user = User.find_by_id(params[:id])
 
   end
 
@@ -76,8 +76,8 @@ class BoxesController < ApplicationController
     @location = Location.find_by_id(params[:id])
     @toys = Toy.all
     @toy = Toy.find_by_id(params[:id])
-    # @users = User.all
-    # @user = User.find_by_id(params[:id])
+    @users = User.all
+    @user = User.find_by_id(params[:id])
 
     if@box.update_attributes(box_params)
       redirect_to box_path(@box), notice: "Successfully updated"
