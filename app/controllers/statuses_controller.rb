@@ -28,20 +28,34 @@ class StatusesController < ApplicationController
 
   def new
     @status = Status.new
-    @age_groups = AgeGroup.all
-    @age_group = AgeGroup.find_by_id(params[:id])
+    @boxes = Box.all
+    @box = Box.find_by_id(params[:id])
+    @users = User.all
+    @user = User.find_by_id(params[:id])
   end
 
   def edit
     @status = Status.find_by_id(params[:id])
+    @boxes = Box.all
+    @box = Box.find_by_id(params[:id])
+    @users = User.all
+    @user = User.find_by_id(params[:id])
   end
 
   def show
     @status = Status.find_by_id(params[:id])
+    @boxes = Box.all
+    @box = Box.find_by_id(params[:id])
+    @users = User.all
+    @user = User.find_by_id(params[:id])
   end
 
   def update
     @status = Status.find_by_id(params[:id])
+    @boxes = Box.all
+    @box = Box.find_by_id(params[:id])
+    @users = User.all
+    @user = User.find_by_id(params[:id])
     if@status.update_attributes(status_params)
       redirect_to status_path(@status), notice: "Successfully updated"
     else
