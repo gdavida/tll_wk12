@@ -58,6 +58,18 @@ class BoxesController < ApplicationController
 
   def edit
     @box = Box.find_by_id(params[:id])
+    @age_groups = AgeGroup.all
+    @age_group = AgeGroup.find_by_id(params[:id])
+    @age_groups = AgeGroup.all
+    @age_group = AgeGroup.find_by_id(params[:id])
+    @statuses = Status.all
+    @status = Status.find_by_id(params[:id])
+    @locations = Location.all
+    @location = Location.find_by_id(params[:id])
+    @toys = Toy.all
+    @toy = Toy.find_by_id(params[:id])
+    @users = User.all
+    @user = User.find_by_id(params[:id])
   end
 
   def show
