@@ -1,2 +1,19 @@
-<h1>Boxes#show</h1>
-<p>Find me in app/views/boxes/show.html.erb</p>
+
+
+<div class="row">
+  <div class="col s12 m6">
+	  <ul class="collection">
+	  <% if @toy.box_id %>
+  		<% @toys.where(box_id:@box.id).find_each do |t|%>
+	    <li class="collection-item avatar">
+	      <img src="<%= t.toy_image %>" alt="" class="circle">
+	      <span class="title"><%= t.name %></span>
+				<a href="#!" class="secondary-content"><%= t.pieces %> pieces</a>
+	    </li>
+	    <% end %>
+	  <% end %>
+	  </ul>
+  </div>
+</div>
+            
+
