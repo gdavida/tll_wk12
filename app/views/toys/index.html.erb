@@ -1,2 +1,12 @@
-<h1>Toys#index</h1>
-<p>Find me in app/views/toys/index.html.erb</p>
+<ul class="collection with-header">
+  <li class="collection-header"><h4>All Toys</h4></li>
+    <% @toys.each do |t|%>
+	  <li class="collection-item">
+	    <div><%= link_to t.name, toy_path(t)%>
+	    <span class="secondary-content">
+				<%= t.age_group.age %>
+			</span>
+	    </div>
+		</li>
+	<% end %>
+</ul>
