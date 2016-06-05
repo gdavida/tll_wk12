@@ -20,10 +20,11 @@
             </div>
             <div class="card-action">
               <%= link_to edit_box_path(@box) do %>
-								<i class="fa fa-pencil-square-o fa-2x white-text" aria-hidden="true"></i>
+								<i class="fa fa-pencil-square-o fa-2x left white-text" aria-hidden="true"></i>
 							<% end %>
+							<span class="left"><%= @status.category %></span>
 							<%= link_to box_path(@box), method: :delete do %>
-								<i class="fa fa-trash fa-2x secondary-content white-text" aria-hidden="true"></i>
+								<i class="fa fa-trash fa-2x right white-text" aria-hidden="true"></i>
 							<% end %>
             </div>
           </div>
