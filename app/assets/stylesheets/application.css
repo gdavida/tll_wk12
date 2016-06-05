@@ -27,6 +27,12 @@
 nav .brand-logo {
 	font-size: 1.6rem;
 }
+/* TLL on pages that are not the home page
+element.style {
+    height: 90px;
+    positioN: relative;
+    bottom: 30px;
+*/
 
 .light-italic {
 	font-weight: 300;
