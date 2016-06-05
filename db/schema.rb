@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20160601221400) do
     t.string   "branch_name",  null: false
     t.string   "address"
     t.string   "contact_name"
+    t.string   "iframe"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end

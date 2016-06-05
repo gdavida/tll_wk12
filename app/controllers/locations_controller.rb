@@ -57,6 +57,6 @@ class LocationsController < ApplicationController
 
   private
   def location_params
-    params.require(:location).permit(:branch_name, :address, :contact_name)
+    params.require(:location).permit(:branch_name, :address, :contact_name, :iframe)
   end
 end

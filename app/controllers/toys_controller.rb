@@ -43,6 +43,8 @@ class ToysController < ApplicationController
     @age_group = AgeGroup.find_by_id(params[:id])
     @boxes = Box.all
     @box = Box.find_by_id(params[:id])
+    @statuses = Status.all
+    @status = Status.find_by_id(params[:id])
   end
 
   def edit
@@ -54,7 +56,9 @@ class ToysController < ApplicationController
     @age_groups = AgeGroup.all
     @age_group = @toy.age_group
     @boxes = Box.all
-    @box = @toy.box
+    @box = Box.find_by_id(params[:id])
+    @statuses = Status.all
+    @status = Status.find_by_id(params[:id])
   end
 
   def update
@@ -63,6 +67,8 @@ class ToysController < ApplicationController
     @age_group = AgeGroup.find_by_id(params[:id])
     @boxes = Box.all
     @box = Box.find_by_id(params[:id])
+    @statuses = Status.all
+    @status = Status.find_by_id(params[:id])
     if@toy.update_attributes(toy_params)
       redirect_to toy_path(@toy), notice: "Successfully updated"
     else

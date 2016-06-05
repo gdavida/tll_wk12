@@ -4,6 +4,7 @@ class CreateLocations < ActiveRecord::Migration
       t.string :branch_name, null: false
       t.string :address
       t.string :contact_name
+      t.string :iframe
 
       t.timestamps null: false
     end

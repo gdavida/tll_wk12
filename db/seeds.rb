@@ -15,9 +15,10 @@ AgeGroup.create!(age:"12 - 24 months", color:"red")
 AgeGroup.create!(age:"24 - 36 months", color:"green")
 AgeGroup.create!(age:"3 - 5 years", color:"blue")
 
-Location.create!(branch_name: "Downtown", address:"123 S Main St", contact_name: "Carol")
-Location.create!(branch_name: "Main", address:"8th and Railroad", contact_name: "Beth")
-Location.create!(branch_name: "Callie", address:"1450 E 48th St", contact_name: "Fred")
+Location.create!(branch_name: "Main Branch", address:"401 E 8th St #207, Sioux Falls, SD 57103", contact_name: "Carol", iframe: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.806136776735!2d-96.72372068460236!3d43.54808286723985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x878eb59af52c8d8d%3A0x168b5986d6ae83f8!2sHealth+Connect!5e0!3m2!1sen!2sus!4v1465132464855")
+Location.create!(branch_name: "Downtown Public Library", address:"200 N Dakota Ave, Sioux Falls, SD 57104", contact_name: "Beth", iframe: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.7520376104853!2d-96.7311124845056!3d43.549210479125044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x878eb598bbcea107%3A0x8588b213cad08e56!2s200+N+Dakota+Ave%2C+Sioux+Falls%2C+SD+57104!5e0!3m2!1sen!2sus!4v1465132508769")
+Location.create!(branch_name: "Oak View Public Library", address:"3700 E. 3rd St, Sioux Falls, SD 57103", contact_name: "Fred", iframe: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.433924232407!2d-96.6825517845054!3d43.55584057912473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x878eb4618f83b4e3%3A0x46f80dd70feb014!2s3700+E+3rd+St%2C+Sioux+Falls%2C+SD+57103!5e0!3m2!1sen!2sus!4v1465132534305")
+Location.create!(branch_name: "Ronning Public Library", address:"3100 E. 49th St, Sioux Falls, SD 57103", contact_name: "Barb", iframe: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.7342522821814!2d-96.69002338450696!3d43.50787907912656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x878eb697a0a2a1b9%3A0x450ec124b4316bdc!2s3100+E+49th+St%2C+Sioux+Falls%2C+SD+57103!5e0!3m2!1sen!2sus!4v1465132559444")
 
 Status.create!(category:"checked in", color:"green")
 Status.create!(category:"checked out", color:"red")
