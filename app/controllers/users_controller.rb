@@ -7,6 +7,10 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @boxes = Box.all
+    @box = Box.find_by_id(params[:id])
+    @statuses = Status.all
+    @status = Status.find_by_id(params[:id])
   end
 
   def index
