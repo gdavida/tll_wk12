@@ -106,6 +106,51 @@ class BoxesController < ApplicationController
     @user = User.find_by_id(params[:id])
   end
 
+  def small_label
+    @box = Box.find_by_id(params[:id])
+    @boxes = Box.all
+    @age_groups = AgeGroup.all
+    @age_group = AgeGroup.find_by_id(params[:id])
+    @statuses = Status.all
+    @status = Status.find_by_id(params[:id])
+    @locations = Location.all
+    @location = Location.find_by_id(params[:id])
+    @toys = Toy.all
+    @toy = Toy.find_by_id(params[:id])
+    @users = User.all
+    @user = User.find_by_id(params[:id])
+  end
+
+  def medium_label
+    @box = Box.find_by_id(params[:id])
+    @boxes = Box.all
+    @age_groups = AgeGroup.all
+    @age_group = AgeGroup.find_by_id(params[:id])
+    @statuses = Status.all
+    @status = Status.find_by_id(params[:id])
+    @locations = Location.all
+    @location = Location.find_by_id(params[:id])
+    @toys = Toy.all
+    @toy = Toy.find_by_id(params[:id])
+    @users = User.all
+    @user = User.find_by_id(params[:id])
+  end
+
+  def large_label
+    @box = Box.find_by_id(params[:id])
+    @boxes = Box.all
+    @age_groups = AgeGroup.all
+    @age_group = AgeGroup.find_by_id(params[:id])
+    @statuses = Status.all
+    @status = Status.find_by_id(params[:id])
+    @locations = Location.all
+    @location = Location.find_by_id(params[:id])
+    @toys = Toy.all
+    @toy = Toy.find_by_id(params[:id])
+    @users = User.all
+    @user = User.find_by_id(params[:id])
+  end
+
   def update
     @box = Box.find_by_id(params[:id])
     @boxes = Box.all

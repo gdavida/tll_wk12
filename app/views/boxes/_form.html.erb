@@ -43,7 +43,7 @@
     <select class="icons" id="user" name="box[user_id]">
       <option value="" disabled selected>Select User</option>
       <% @users.each do |s| %>
-        <option value="<%= s.id %>"><%= s.name %></option>
+        <option value="<%= s.id %>"><%= s.first_name %><%= s.last_name %></option>
       <% end %>
     </select>
   </div>

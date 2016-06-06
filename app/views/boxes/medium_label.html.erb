@@ -1,16 +1,11 @@
-
+<h1>MEDIUM LABELS</h1>
             
       <div class="row">
         <div class="col s12 m8 offset-m2">
           <div class="card blue-grey darken-1">
             <div class="card-content white-text">
-            	<div class="left">
-          			<%= image_tag("tll-logo.png", class:"responsive-img") %>
-	            </div>
-	            <div class="right">
-	              <span class="card-title white-text"><%= @box.name %></span><br>
-	              <span class="white-text fontSize17">Total Number of Pieces</span>
-	            </div>
+              <span class="card-title white-text"><%= @box.name %>- </span>
+              <span class="white-text fontSize17">Total Number of Pieces</span>
 							<ul class="collection">
 								  <% if @toy.box_id %>
 							  		<% @toys.where(box_id:@box.id).find_each do |t|%>

@@ -10,6 +10,9 @@ Rails.application.routes.draw do
   resources :users
   resources :sessions
 
+  get 'boxes/small_label/:id' => 'boxes#small_label', :as => :small
+  get 'boxes/medium_label/:id' => 'boxes#medium_label', :as => :medium
+  get 'boxes/large_label/:id' => 'boxes#large_label', :as => :large
   get 'login' => 'sessions#new', :as => :login
   post 'logout' => 'sessions#destroy', :as => :logout
 

@@ -78,3 +78,12 @@ element.style {
 .toy-image-show {
     background-color: #fff;
 }
+
+.img120x120 {
+    max-width: 120px;
+    max-width: 120px;
+}
+
+.inlineList {
+    display: block;
+}
