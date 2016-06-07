@@ -1,18 +1,21 @@
 
-	<div class ="row <%= @age_group.color %> smLabel">
-		<span class="col s3">
-			<h2><%= @box.name %></h2>
-			<h5><%= @age_group.age %></h5>
-			<h5 class="">15 pieces</h5>
-		</span>
-		<div class="col s9 inlineBlock white">
-			<% if @toy.box_id %>
-				<% @toys.where(box_id:@box.id).find_each do |t|%>
-				<div class="inlineBlock col s3 blackBorder smToyRow center">
-					<img src="<%= t.toy_image %>" alt="" class="img120x120">
-					<p class="height42 margin0"><%= t.name %> <hr><span class="borderTopBlack"><%= t.pieces %> pieces</span></p>
+	<div class ="<%= @age_group.color %> smLabel">
+		<div class="row">
+			<span class="col s2 center">
+				<h4><%= @box.name %></h4>
+				<p class="lineHeight12"><%= @age_group.age %><br>
+				<span class="fontxs">15 pieces</span></p>
+			</span>
+			<div class="col s10 inlineBlock">
+				<% if @toy.box_id %>
+					<% @toys.where(box_id:@box.id).find_each do |t|%>
+						<div class="inlineBlock height116px white col s3 smToyRow center">
+							<img src="<%= t.toy_image %>" alt="" class="responsive-img">
+							<p class="fontxs margin0"><%= t.name %> (<%= t.pieces %>)
+							</p>
+						</div>
+						<% end %>
+					<% end %>
 				</div>
-				<% end %>
-			<% end %>
 		</div>
 	</div>
