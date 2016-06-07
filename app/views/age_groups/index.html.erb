@@ -1,2 +1,14 @@
-<h1>AgeGroups#index</h1>
-<p>Find me in app/views/age_groups/index.html.erb</p>
+<div class="container">
+<ul class="collection with-header">
+  <li class="collection-header"><h4>All Age Groups</h4></li>
+  <% @age_groups.each do |a|%>
+	<li class="collection-item">
+	  <div><%= link_to a.age, location_path(a)%>
+	    <span class="secondary-content">
+			<%= a.color %>
+			</span>
+	  </div>
+	</li>
+	<% end %>
+</ul>
+</div>

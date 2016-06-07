@@ -1,0 +1,30 @@
+<%= form_for @age_group do |a| %>
+  <% if a.object.errors.any?%>
+    <div class="col xs12 s12">
+      <% a.object.errors.full_messages.each do |x|%>
+        <p>Error: <%= x %></p>
+        <p>User was not saved </p>
+      <% end %>
+    </div>
+  <% end %>
+
+
+  <div class="input-field col s12 m10 offset-m1">
+    <div><%= a.label :age %></div>
+    <div><%= a.text_field :age %></div>
+  </div>
+
+  <div class="input-field col s12 m10 offset-m1">
+    <div><%= a.label :color %></div>
+    <div><%= a.text_field :color %></div>
+  </div>
+
+
+
+  <div class="col sm10 offset-m1">
+    <span class="waves-effect right waves-light newPackBtn btn amber lighten-1">
+      <%= a.submit %>
+    </span>
+  </div>
+
+<% end %>
