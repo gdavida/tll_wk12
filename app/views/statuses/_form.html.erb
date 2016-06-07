@@ -9,32 +9,22 @@
   <% end %>
 
 
-  <!-- DROPDOWN PICK A USER -->
   <div class="input-field col s12 m10 offset-m1">
-    <div><%= s.label :user_id %></div>
-    <select class="icons" id="user" name="box[user_id]">
-      <option value="" disabled selected>Select User</option>
-      <% @users.each do |u| %>
-        <option value="<%= u.id %>"><%= u.name %></option>
-      <% end %>
-    </select>
+    <div><%= s.label :category %></div>
+    <div><%= s.text_field :category %></div>
+  </div>
+
+  <div class="input-field col s12 m10 offset-m1">
+    <div><%= s.label :color %></div>
+    <div><%= s.text_field :color %></div>
   </div>
 
 
-  <!-- DROPDOWN PICK A STATUS -->
-  <div class="input-field col s12 m10 offset-m1">
-    <div><%= s.label :status_id %></div>
-    <select class="icons" id="status" name="box[status_id]">
-      <option value="" disabled selected>Select Status</option>
-      <% @statuses.each do |s| %>
-        <option value="<%= s.id %>"><%= s.category %></option>
-      <% end %>
-    </select>
-  </div>
 
-
-  <div>
-    <%= s.submit %>
+  <div class="col sm10 offset-m1">
+    <span class="waves-effect right waves-light newPackBtn btn amber lighten-1">
+      <%= s.submit %>
+    </span>
   </div>
 
 <% end %>
