@@ -41,7 +41,7 @@ Toy.create!(name: "Links", upc: "786417014846", toy_image: "http://www.toysrus.c
 Toy.create!(name: "Learning with Animals Book", upc: "0756634687", toy_image: "http://www.dhresource.com/0x0s/f2-albu-g4-M00-83-69-rBVaEFbvvfWAPYO7AAS2nalp93o574.jpg/new-baby-039-s-cognitive-cloth-book-4-pcs.jpg", pieces: 1, box_id: 1, age_group_id: 1, brand: "Other Brand", manufacturer_suggested_age: "5 yr +", website: "www.google.com", purchased_from: "Sl's ToyBarn", price: "4.99")
 Toy.create!(name: "Duck", upc: "735282310010", toy_image: "http://ekmpowershop9.com/ekmps/shops/bargainwarehous/images/toy-squeezy-duck-plastic-5cm-yellow-pw-9465-p.jpg", pieces: 1, box_id: 1, age_group_id: 1, brand: "Mattel", manufacturer_suggested_age: "1 yr +", website: "www.google.com", purchased_from: "ToyChest", price: "33.00")
 
-User.create!(first_name:"Davida", last_name: "Gaffney", role: "administrator", phone: "123-456-2342", email: "davida@davida.com", password: "doghat", password_confirmation: "doghat")
+User.create!(first_name:"Davida", last_name: "Gaffney", role: "administrator", phone: "123-456-2342", email: "davida@davida.com", password: "password", password_confirmation: "password")
 User.create!(first_name:"Sadie", last_name: "McGarvey", role: "volunteer", phone: "423-344-1234", email: "sadie@sadie.com", password: "password", password_confirmation: "password")
 User.create!(first_name:"Patrick", last_name: "Gaffney", role: "patron", phone: "123-456-2342", email: "patrick@patrick.com", password: "brooklyn", password_confirmation: "brooklyn")
 User.create!(first_name:"Patty", last_name: "Kreikemeier", role: "patron", phone: "402-555-2322", email: "patty@patty.com", password: "mypassword", password_confirmation: "mypassword")
