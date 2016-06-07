@@ -1,0 +1,38 @@
+<%= form_for @location do |l| %>
+
+
+<% if l.object.errors.any?%>
+  <div class="col xs12 s12">
+    <% l.object.errors.full_messages.each do |x|%>
+      <li>Error: <%= x %></li>
+    <% end %>
+  </div>
+  <% end %>
+
+  <div class="input-field col s12 m10 offset-m1">
+    <div><%= l.label :branch_name %></div>
+    <div><%= l.text_field :branch_name %></div>
+  </div>
+
+  <div class="input-field col s12 m10 offset-m1">
+    <div><%= l.label :address %></div>
+    <div><%= l.text_field :address %></div>
+  </div>
+
+  <div class="input-field col s12 m10 offset-m1">
+    <div><%= l.label :contact_name %></div>
+    <div><%= l.text_field :contact_name %></div>
+  </div>
+
+  <div class="input-field col s12 m10 offset-m1">
+    <div><%= l.label :iframe %></div>
+    <div><%= l.text_field :iframe %></div>
+  </div>
+
+  <div class="col sm10 offset-m1">
+    <span class="waves-effect right waves-light newPackBtn btn amber lighten-1">
+      <%= l.submit %>
+    </span>
+  </div>
+<% end %>
+
