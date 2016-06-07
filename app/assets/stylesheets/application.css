@@ -18,7 +18,8 @@
 }
 */
 
-.smallHeader {
+.margintop60px {
+    margin-top: 60px;
 }
 
 .container .row {
@@ -113,6 +114,8 @@ element.style {
     width: 5.5in !important;
     margin-left: auto;
     margin-right: auto;
+    outline: 1px solid black;
+    outline-offset: 10px;
 }
 .smToySection {
 }
@@ -142,6 +145,8 @@ element.style {
     width: 4in !important;
     margin-left: auto;
     margin-right: auto;
+    outline: 1px solid black;
+    outline-offset: 10px;
 }
 
 .medLabel .responsive-img {
@@ -196,6 +201,8 @@ element.style {
     width: 4in !important;
     margin-left: auto;
     margin-right: auto;
+    outline: 1px solid black;
+    outline-offset: 10px;
 }
 
 .largeLabel .responsive-img {
