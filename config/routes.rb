@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root :to => 'toys'
+  root :to => 'static_pages#home'
 
   resources :age_groups
   resources :locations
