@@ -13,9 +13,9 @@
  *= require_tree .
  *= require_self
  */
-/** {
+* {
 	outline: 1px solid purple;
-}*/
+}
 
 
 .container .row {
@@ -88,9 +88,11 @@ element.style {
     height: 20%;
 }
 
-.img120x120 {
-    margin-top: 8px;
-    height: 120px;
+.imgSquare {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    max-height: 90%;
+    max-width: 90%;
 }
 .img150x150 {
     margin-top: 10px;
@@ -101,33 +103,48 @@ element.style {
     display: inline-block;
 }
 
+
+
 .blackBorder {
     margin-top: 10.5px;
     border:1px solid black;
 }
-.smToyRow {
-    height: 215px;
-}
-
 .maxwidth25 {
     max-width: 25%;
 }
 
 .smLabel {
-    padding:10px;
-    margin:10px;
+    height: 1.5in !important;
+    width: 5.5in !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+.smToySection {
+}
+.smToyRow {
+    max-height: 96% !important;
+    position: relative;
+    top: 16px;
+}
+
+.lineHeight12 {
+    line-height: 1.2;
+}
+
+.height116px {
+    height:116px;
 }
 
 .medLabel {
     padding-bottom: 0 !important;
 }
 
-.height42 {
-    height: 42px;
-}
-
 .medSectionToys{
     margin-top: 20px;
     margin-bottom: 20px;
     padding-bottom: 10.5px !important;
+}
+
+.smLabel .fontxs {
+    font-size: 9px;
 }
