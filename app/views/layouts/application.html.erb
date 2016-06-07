@@ -16,31 +16,34 @@
           
   </head>
   <body>
+<!-- Dropdown Structure -->
+<ul id="dropdownToys" class="dropdown-content">
+  <li class="fontSize12"><%= link_to "All Toys", toys_path %></li>
+  <li><a href="#!"><i class="fa fa-plus-circle" aria-hidden="true"></i>  Add New Toy</a></li>
+</ul>
+<ul id="dropdownBoxes" class="dropdown-content">
+  <li class="fontSize12"><%= link_to "All Boxes", boxes_path %></li>
+  <li><a href="#!"><i class="fa fa-plus-circle" aria-hidden="true"></i> Add New Box</a></li>
+</ul>
+<ul id="dropdownLocations" class="dropdown-content">
+  <li class="fontSize12"><%= link_to "All Locations", locations_path %></li>
+  <li><a href="#!"><i class="fa fa-plus-circle" aria-hidden="true"></i>  Add New Location</a></li></ul>
+<ul id="dropdownUsers" class="dropdown-content">
+  <li class="fontSize12"><%= link_to "All Users", users_path %></li>
+  <li><a href="#!"><i class="fa fa-plus-circle" aria-hidden="true"></i> Add New User</a></li>
+</ul>
 <nav class="grey darken-3" role="navigation">
-    <div class="nav-wrapper container">
-    <a id="logo-container" href="#" class="brand-logo">
-      Toy Lending Library
-    </a>
-      <ul class="right hide-on-med-and-down">
-        <li><%= link_to "Toys", toys_path %></li>
-      </ul>
-      <ul class="right hide-on-med-and-down">
-        <li><%= link_to "Boxes", boxes_path %></li>
-      </ul>
-      <ul class="right hide-on-med-and-down">
-        <li><%= link_to "Locations", locations_path %></li>
-      </ul>
-      <ul class="right hide-on-med-and-down">
-        <li><%= link_to "Users", users_path %></li>
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+  <div class="nav-wrapper container">
+    <a href="/" class="brand-logo">Toy Lending Library</a>
+    <ul class="right hide-on-med-and-down">
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="/toys" data-activates="dropdownToys">Toys</a></li>
+      <li><a class="dropdown-button" href="/boxes" data-activates="dropdownBoxes">Boxes</a></li>
+      <li><a class="dropdown-button" href="/locations" data-activates="dropdownLocations">Locations</a></li>
+      <li><a class="dropdown-button" href="/users" data-activates="dropdownUsers">Users</a></li>
+    </ul>
   </div>
+</nav>
 
 <div class="container-fluid">
 
@@ -109,8 +112,7 @@
       Made by <a class="black-text" href="http://gdavida.github.io/dgPortfolio">Davida Gaffney</a>
       </div>
     </div>
-  </footer>
-
+=
 
     <!-- jQuery first, then MAterialize JS. -->
       <!--Import jQuery before materialize.js-->
@@ -122,6 +124,7 @@
   $(document).ready(function() {
   $('select').material_select();
   $('label').addClass('active');
+  $(".dropdown-button").dropdown();
 });
 </script>
        
