@@ -89,8 +89,12 @@ element.style {
 }
 
 .img120x120 {
-    margin-top: 5px;
+    margin-top: 8px;
     height: 120px;
+}
+.img150x150 {
+    margin-top: 10px;
+    height: 150px;
 }
 
 .inlineBlock {
@@ -99,8 +103,9 @@ element.style {
 
 .blackBorder {
     margin-top: 10.5px;
-    margin-bottom: 10.5px;
     border:1px solid black;
+}
+.smToyRow {
     height: 215px;
 }
 
@@ -113,6 +118,16 @@ element.style {
     margin:10px;
 }
 
+.medLabel {
+    padding-bottom: 0 !important;
+}
+
 .height42 {
     height: 42px;
+}
+
+.medSectionToys{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10.5px !important;
 }
