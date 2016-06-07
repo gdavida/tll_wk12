@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>TllWk12</title>
+    <title>The Toy Lending Library</title>
 <link rel="icon" 
       type="image/png" 
       href="http://www.toylendinglibrary.com/wp-content/uploads/2015/09/cropped-TLLFav-32x32.png">
@@ -42,12 +42,14 @@
   </nav>
   </div>
 
-<!-- HEADER HERO W LOGO -->
+<div class="container-fluid">
+
+<!-- HEADER SMALLER MOST PAGES W LOGO -->
   <div class=" light-green section no-pad-bot" id="index-banner">
-    <div class="container">
+    <div class="container smallHeader">
       <div class="row center">
       <br>
-        <div class="col s8 offset-s2 m4 offset-m4">
+        <div class="col s8 offset-s2 m4 offset-m4 TLLlogo">
           <%= image_tag("tll-logo.png", class:"responsive-img") %>
         </div>
         <div class="col s8 offset-s2 center-align">
@@ -62,12 +64,13 @@
   </div>
 
 
+  
+</div>
+
   <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
       
       <%= yield %>
 
-    </div>
       <br><br>
 
   </div>

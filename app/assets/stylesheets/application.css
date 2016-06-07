@@ -18,6 +18,9 @@
 }
 */
 
+.smallHeader {
+}
+
 .container .row {
     margin-left: 0;
     margin-right: 0;
@@ -75,6 +78,9 @@ element.style {
     height: 100% !important;
 }
 
+.TLLlogo {
+}
+
 .toy-image-show {
     background-color: #fff;
 }
@@ -93,6 +99,10 @@ element.style {
 .blackBorder {
     margin-top: 10.5px;
     border:1px solid black;
+}
+
+.section {
+  padding-top: 0 !important;
 }
 
 

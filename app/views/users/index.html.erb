@@ -1,12 +1,14 @@
-<ul class="collection with-header">
-  <li class="collection-header"><h4>All Users</h4></li>
-    <% @users.each do |u|%>
-	  <li class="collection-item">
-	    <div><%= link_to u.first_name, user_path(u)%> <%= link_to u.last_name, user_path(u)%>
-	    <span class="secondary-content">
-				<%= u.role %>
-			</span>
-	    </div>
-		</li>
-	<% end %>
-</ul>
+<div class="container">
+	<ul class="collection with-header">
+	  <li class="collection-header"><h4>All Users</h4></li>
+	    <% @users.each do |u|%>
+		  <li class="collection-item">
+		    <div><%= link_to u.first_name, user_path(u)%> <%= link_to u.last_name, user_path(u)%>
+		    <span class="secondary-content">
+					<%= u.role %>
+				</span>
+		    </div>
+			</li>
+		<% end %>
+	</ul>
+</div>
