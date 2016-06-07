@@ -19,18 +19,30 @@
 <!-- Dropdown Structure -->
 <ul id="dropdownToys" class="dropdown-content">
   <li class="fontSize12"><%= link_to "All Toys", toys_path %></li>
-  <li><a href="#!"><i class="fa fa-plus-circle" aria-hidden="true"></i>  Add New Toy</a></li>
+  <li>
+    <%= link_to "Add New Toy", new_toy_path %>
 </ul>
 <ul id="dropdownBoxes" class="dropdown-content">
   <li class="fontSize12"><%= link_to "All Boxes", boxes_path %></li>
-  <li><a href="#!"><i class="fa fa-plus-circle" aria-hidden="true"></i> Add New Box</a></li>
+  <li>
+    <%= link_to "Add New Box", new_box_path %>
+  </li>
 </ul>
 <ul id="dropdownLocations" class="dropdown-content">
-  <li class="fontSize12"><%= link_to "All Locations", locations_path %></li>
-  <li><a href="#!"><i class="fa fa-plus-circle" aria-hidden="true"></i>  Add New Location</a></li></ul>
+  <li class="fontSize12">
+    <%= link_to "All Locations", locations_path %>
+  </li>
+  <li>
+    <%= link_to "Add New Location", new_location_path %>
+  </li>
+</ul>
 <ul id="dropdownUsers" class="dropdown-content">
-  <li class="fontSize12"><%= link_to "All Users", users_path %></li>
-  <li><a href="#!"><i class="fa fa-plus-circle" aria-hidden="true"></i> Add New User</a></li>
+  <li class="fontSize12">
+    <%= link_to "All Users", users_path %>
+  </li>
+  <li>
+    <%= link_to "Add New User", new_user_path %>
+  </li>
 </ul>
 <nav class="grey darken-3" role="navigation">
   <div class="nav-wrapper container">
