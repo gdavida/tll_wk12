@@ -15,8 +15,8 @@
  */
 /** {
 	outline: 1px solid purple;
-}
-*/
+}*/
+
 
 .container .row {
     margin-left: 0;
@@ -79,11 +79,40 @@ element.style {
     background-color: #fff;
 }
 
-.img120x120 {
-    max-width: 120px;
-    max-width: 120px;
+.margin0 {
+    margin: 0;
 }
 
-.inlineList {
-    display: block;
+.imgfifth {
+    width: 20%;
+    height: 20%;
+}
+
+.img120x120 {
+    margin-top: 5px;
+    height: 120px;
+}
+
+.inlineBlock {
+    display: inline-block;
+}
+
+.blackBorder {
+    margin-top: 10.5px;
+    margin-bottom: 10.5px;
+    border:1px solid black;
+    height: 215px;
+}
+
+.maxwidth25 {
+    max-width: 25%;
+}
+
+.smLabel {
+    padding:10px;
+    margin:10px;
+}
+
+.height42 {
+    height: 42px;
 }

@@ -1,32 +1,18 @@
-<h1>small LABELS</h1>
-            
-      <div class="row">
-        <div class="col s12 m8 offset-m2">
-          <div class="card darken-1">
-            <div class="card-content ">
-              <span class="card-title "><%= @box.name %>- </span>
-              <span class=" fontSize17">Total Number of Pieces</span>
-							<ul class="">
-								  <% if @toy.box_id %>
-							  		<% @toys.where(box_id:@box.id).find_each do |t|%>
-								    <li class="inlineList">
-								      <img src="<%= t.toy_image %>" alt="" class="img120x120">
-								      <span class="title"><%= t.name %></span><br>
-											<span class="fontSize12"><%= t.pieces %> pieces</span>
-								    </li>
-								    <% end %>
-								  <% end %>
-								</ul>
-            </div>
-            <div class="card-action">
-              <%= link_to edit_box_path(@box) do %>
-								<i class="fa fa-pencil-square-o fa-2x left " aria-hidden="true"></i>
-							<% end %>
-							<span class="left"><%= @status.category %></span>
-							<%= link_to box_path(@box), method: :delete do %>
-								<i class="fa fa-trash fa-2x right " aria-hidden="true"></i>
-							<% end %>
-            </div>
-          </div>
-        </div>
-      </div>
+
+	<div class ="row <%= @age_group.color %> smLabel">
+		<span class="col s3">
+			<h2><%= @box.name %></h2>
+			<h5><%= @age_group.age %></h5>
+			<h5 class="">15 pieces</h5>
+		</span>
+		<div class="col s9 inlineBlock white">
+			<% if @toy.box_id %>
+				<% @toys.where(box_id:@box.id).find_each do |t|%>
+				<div class="inlineBlock col s3 blackBorder center">
+					<img src="<%= t.toy_image %>" alt="" class="img120x120">
+					<p class="height42 margin0"><%= t.name %> <hr><span class="borderTopBlack"><%= t.pieces %> pieces</span></p>
+				</div>
+				<% end %>
+			<% end %>
+		</div>
+	</div>
