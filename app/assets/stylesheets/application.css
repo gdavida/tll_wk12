@@ -15,8 +15,8 @@
  */
 /** {
 	outline: 1px solid purple;
-}
-*/
+}*/
+
 
 .margintop60px {
     margin-top: 60px;
@@ -259,3 +259,7 @@ element.style {
     left:8px;
 }
 
+
+.addButton {
+    display: inline;
+}

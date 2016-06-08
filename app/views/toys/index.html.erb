@@ -1,6 +1,14 @@
 <div class="container">
 <ul class="collection with-header">
-  <li class="collection-header"><h4>All Toys</h4></li>
+        <li class="collection-item">
+          <div> <span class="fontSize17">All Toys</span>
+            <%= link_to new_toy_path(@toy) do %>
+              <i class="material-icons amber-text text-darken-1 secondary-content">
+                library_add
+              </i>
+            <% end %>
+          </div>
+        </li>
     <% @toys.each do |t|%>
     <li class="collection-item avatar">
       <img src="<%= t.toy_image %>" alt="" class="circle">

@@ -16,44 +16,25 @@
           
   </head>
   <body>
-<!-- Dropdown Structure -->
-<ul id="dropdownToys" class="dropdown-content">
-  <li class="fontSize12"><%= link_to "All Toys", toys_path %></li>
-  <li>
-    <%= link_to "Add New Toy", new_toy_path %>
-</ul>
-<ul id="dropdownBoxes" class="dropdown-content">
-  <li class="fontSize12"><%= link_to "All Boxes", boxes_path %></li>
-  <li>
-    <%= link_to "Add New Box", new_box_path %>
-  </li>
-</ul>
-<ul id="dropdownLocations" class="dropdown-content">
-  <li class="fontSize12">
-    <%= link_to "All Locations", locations_path %>
-  </li>
-  <li>
-    <%= link_to "Add New Location", new_location_path %>
-  </li>
-</ul>
-<ul id="dropdownUsers" class="dropdown-content">
-  <li class="fontSize12">
-    <%= link_to "All Users", users_path %>
-  </li>
-  <li>
-    <%= link_to "Add New User", new_user_path %>
-  </li>
-</ul>
+
 
 <nav class="grey darken-3" role="navigation">
   <div class="nav-wrapper container">
     <a href="/" class="brand-logo">Toy Lending Library</a>
     <ul class="right hide-on-med-and-down">
       <!-- Dropdown Trigger -->
-      <li><a class="dropdown-button" href="/toys" data-activates="dropdownToys">Toys</a></li>
-      <li><a class="dropdown-button" href="/boxes" data-activates="dropdownBoxes">Boxes</a></li>
-      <li><a class="dropdown-button" href="/locations" data-activates="dropdownLocations">Locations</a></li>
-      <li><a class="dropdown-button" href="/users" data-activates="dropdownUsers">Users</a></li>
+      <li class="fontSize12">
+        <%= link_to "Toys", toys_path %>
+      </li>
+      <li class="fontSize12">
+        <%= link_to "Boxes", boxes_path %>
+      </li>
+      <li class="fontSize12">
+        <%= link_to "Locations", locations_path %>
+      </li>
+      <li class="fontSize12">
+        <%= link_to "Users", users_path %>
+      </li>
     </ul>
   </div>
 </nav>
