@@ -28,8 +28,15 @@
     padding-bottom: 15px;
 }
 
-nav .brand-logo {
+nav {
+    height:130px;
+    margin-bottom: 50px;
+    padding-top: 8px;
+}
+
+.brand-logo {
 	font-size: 1.6rem;
+    max-width: 200px;
 }
 /* TLL on pages that are not the home page
 element.style {
@@ -37,6 +44,12 @@ element.style {
     positioN: relative;
     bottom: 30px;
 */
+
+
+.positionTop30 {
+    position: relative;
+    top:30px;
+}
 
 .light-italic {
 	font-weight: 300;
@@ -50,6 +63,10 @@ element.style {
 .fontSize12 {
 	font-size: 12px;
 }
+.navWidth {
+    width:130px;
+}
+
 .fontSize17 {
 	font-size: 18px;
 }
