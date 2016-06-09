@@ -29,6 +29,10 @@ gem "sorcery"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# https://github.com/mileszs/wicked_pdf
+gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
