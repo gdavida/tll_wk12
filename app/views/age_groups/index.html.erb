@@ -11,7 +11,7 @@
         </li>
   <% @age_groups.each do |a|%>
 	<li class="collection-item">
-	  <div><%= link_to a.age, location_path(a)%>
+	  <div><%= link_to a.age, age_group_path(a)%>
 	    <span class="secondary-content">
 			<%= a.color %>
 			</span>
@@ -19,4 +19,10 @@
 	</li>
 	<% end %>
 </ul>
+
+<h3>Import Age Groups</h3>
+<%= form_tag import_age_groups_path, multipart: true do %>
+  <%= file_field_tag :file%>
+  <%= submit_tag "Upload Age Groups" %>
+<% end %>
 </div>

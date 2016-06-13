@@ -55,6 +55,11 @@ class LocationsController < ApplicationController
     redirect_to :locations, notice: "Successfully destroyed!"
   end
 
+  def import
+    Location.import(params[:file])
+    redirect_to locations_path
+  end
+
   private
   def location_params
     params.require(:location).permit(:branch_name, :address, :contact_name, :iframe)

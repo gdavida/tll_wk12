@@ -10,6 +10,18 @@ Rails.application.routes.draw do
   resources :users
   resources :sessions
 
+  resources :toys do
+    collection { post :import }
+  end
+
+  resources :age_groups do
+    collection { post :import }
+  end
+
+  resources :locations do
+    collection { post :import }
+  end
+
   get 'boxes/small_label/:id' => 'boxes#small_label', :as => :small
   get 'boxes/medium_label/:id' => 'boxes#medium_label', :as => :medium
   get 'boxes/large_label/:id' => 'boxes#large_label', :as => :large

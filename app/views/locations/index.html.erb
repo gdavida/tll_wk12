@@ -19,4 +19,9 @@
 	</li>
 	<% end %>
 </ul>
+<h3>Import Location</h3>
+<%= form_tag import_locations_path, multipart: true do %>
+  <%= file_field_tag :file%>
+  <%= submit_tag "Upload Locations" %>
+<% end %>
 </div>

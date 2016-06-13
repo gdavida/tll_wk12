@@ -54,6 +54,13 @@ class AgeGroupsController < ApplicationController
     redirect_to :age_groups, notice: "Successfully destroyed!"
   end
 
+
+  def import
+    AgeGroup.import(params[:file])
+    redirect_to age_groups_path
+  end
+
+
   private
   def age_group_params
     params.require(:age_group).permit(:age, :color)

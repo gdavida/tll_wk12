@@ -4,4 +4,10 @@ class AgeGroup < ActiveRecord::Base
 
 	has_many :toys
 	has_many :boxes
+
+	def self.import(file)
+		CSV.foreach(file.path, headers: true) do |row|
+			AgeGroup.create! row.to_hash
+		end
+	end
 end

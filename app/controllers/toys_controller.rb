@@ -83,6 +83,12 @@ class ToysController < ApplicationController
     redirect_to :toys, notice: "Successfully destroyed!"
   end
 
+  def import
+    Toy.import(params[:file])
+    redirect_to toys_path
+  end
+
+
   private
   def toy_params
     params.require(:toy).permit(:name, :box_id, :brand, :age_group_id, :upc, :manufacturer_suggested_age, :pieces, :website, :purchased_from, :price, :toy_image)
